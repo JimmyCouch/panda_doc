@@ -8,6 +8,7 @@ module PandaDoc
       attribute? :role, Types::Coercible::String.optional
       attribute? :type, Types::Coercible::String.optional
       attribute? :signing_order, Types::Coercible::Integer.optional
+      attribute? :shared_link, Types::Coercible::String
     end
   end
 end
