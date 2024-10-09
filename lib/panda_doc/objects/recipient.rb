@@ -2,11 +2,7 @@
 
 module PandaDoc
   module Objects
-    class Recipient < Base
-      attribute? :id, Types::Coercible::String.optional
-      attribute? :email, Types::Coercible::String
-      attribute? :first_name, Types::Coercible::String.optional
-      attribute? :last_name, Types::Coercible::String.optional
+    class Recipient < Person
       attribute? :recipient_type, Types::Coercible::String
       attribute? :has_completed, Types::Params::Bool
       attribute? :role, Types::Coercible::String.optional
