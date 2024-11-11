@@ -10,8 +10,8 @@ module PandaDoc
       attribute? :template, Objects::Template
       attribute? :created_by, Objects::Person
       attribute? :recipients, Types::Array.of(Objects::Recipient)
-      attribute :date_created, Types::Params::DateTime
-      attribute :date_modified, Types::Params::DateTime
+      attribute? :date_created, Types::Params::DateTime
+      attribute? :date_modified, Types::Params::DateTime
       attribute? :expiration_date, Types::Params::DateTime.optional
       attribute :version, Types::String.optional
 
