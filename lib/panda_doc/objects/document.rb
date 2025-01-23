@@ -7,7 +7,7 @@ module PandaDoc
       attribute? :uuid, Types::String
       attribute :status, Types::Custom::DocumentStatus
       attribute :name, Types::String
-      attribute? :template, Objects::Template
+      # attribute? :template, Objects::Template
       attribute? :created_by, Objects::Person
       attribute? :recipients, Types::Array.of(Objects::Recipient)
       attribute :date_created, Types::Params::DateTime
